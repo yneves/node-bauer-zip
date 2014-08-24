@@ -12,7 +12,7 @@ npm install bauer-zip
 ## Usage
 
 ```js
-var z = require("bauer-z");
+var z = require("bauer-zip");
 
 // sync zip
 z.zip("/path-to-zip","output-file.zip");
