@@ -1,0 +1,29 @@
+{
+  "name": "bauer-zip",
+  "version": "1.0.0",
+  "description": "Zip and unzip files and folders.",
+  "keywords": ["unzip","zip"],
+  "license": "MIT",
+  "homepage": "https://github.com/yneves/node-bauer-zip",
+  "author": {
+    "name": "Yuri Neves Silveira",
+    "url": "http://yneves.com/",
+    "email": "npm@yneves.com"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/yneves/node-bauer-zip.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": ">=1.0.0"
+  },
+  "dependencies": {
+    "jszip": "^2.4.0",
+    "decompress-zip": "0.0.8",
+    "bauer-factory": ">=1.0.0"
+  },
+  "main": "zip.js"
+}
