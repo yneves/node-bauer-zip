@@ -1,6 +1,6 @@
 {
   "name": "bauer-zip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zip and unzip files and folders.",
   "keywords": ["unzip","zip"],
   "license": "MIT",

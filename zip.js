@@ -25,14 +25,13 @@ var z = lib.factory.object({
 		ss: function(rootDir,saveTo) {
 			var zip = new lib.jszip();
 			rootDir = lib.path.resolve(rootDir);
-			function recurse(fullPath,parentZip,callback) {
+			function recurse(fullPath,parentZip) {
 				var stat = lib.fs.statSync(fullPath);
 				var dir = lib.path.dirname(fullPath);
 				var file = lib.path.basename(fullPath);
 				if (stat.isDirectory()) {
 					var folderZip = parentZip.folder(file);
 					var files = lib.fs.readdirSync(fullPath);
-					if (!files.length) return callback();
 					var count = files.length;
 					files.forEach(function(file) {
 						var filePath = lib.path.resolve(fullPath,file);
